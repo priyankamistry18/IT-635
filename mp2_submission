@@ -1,0 +1,317 @@
+<table><tr><td> <em>Assignment: </em> IS601 Mini Project 2  Business Management</td></tr>
+<tr><td> <em>Student: </em> Khushali Sheth (kks44)</td></tr>
+<tr><td> <em>Generated: </em> 12/4/2022 1:22:29 PM</td></tr>
+<tr><td> <em>Grading Link: </em> <a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-007-F22/is601-mini-project-2-business-management/grade/kks44" target="_blank">Grading</a></td></tr></table>
+<table><tr><td> <em>Instructions: </em> <ol><li>checkout dev and pull any latest changes</li><li>Create a branch called MiniProject-2</li><li>Add all the baseline files first under a folder called BusinessManagement (included below)</li><li>Don't forget to copy your .env file from flask_sample into BusinessManagement</li><li>source the venv and pip install the requirements.txt</li><li>Run the BusinessManagement/sql/init_db.py script</li><li>Immediate add/commit/push to github</li><li>Open a pull request and keep it open until you're done adding the submission file</li><li>&nbsp;(optional) updated the deploy dev yml file and add MiniProject-2 so you can deploy to dev without needing to merge into dev</li><li>Make your code changes per the following requirements</li><ol><li>Important: run the test files indiviudally as you're working/testing to save on query quota usage</li></ol><li>Add/commit periodically (recommended after you implement a TODO item or checlist item)<br></li><li>Anywhere relevant add your ucid and the date you added the code (best to do this as you go)</li><li>You'll be capturing website screenshots from dev and code snippet screenshots (ensure you upload these properly as pull request comments to the pull request from step 5</li><ol><li>Note: You don't need separate screenshots for each checklist item, when possible it's recommended to try to capture multiple items together</li><li>Ensure all screenshots are properly captioned in the deliverable section</li></ol><li>You may save your progress when filling out this submission as often as you want</li><li>Once done, copy the markdown or download the md file and save it under the BusinessManagement folder</li><li>Do a final add/commit/push</li><li>Verify everything looks ok in the pull request</li><li>Merge the pull request</li><li>Make a new pull request from dev to prod and merge it</li><li>Navigate to the submission file under the BusinessManagement folder</li><li>Copy the github url to the exact file and submit it to Canvas</li></ol><div>You'll be implementing a basic Business Management site.</div><div>There will be some provided files fully working as-is and some skeleton files you'll need to fill in.</div><div>The files you need to fill in will have TODO items or comments mentioning what's expected.</div><div>There are provided test case files too that all must be passing for full credit. Do not edit these test case files.</div><div>The site will handle CRUD operations for Companies and Employees as well as allowing import of Company/Employee data via a csv file.</div><div><br></div><div>Baseline files:&nbsp;<a href="https://github.com/MattToegel/IS601/tree/F22-MiniProject-2">https://github.com/MattToegel/IS601/tree/F22-MiniProject-2</a></div><div>May want to download branch as a zip, then copy/paste the files into your repo</div><div><br></div><div>Provided files you don't need to edit:</div><div><ul><li>000_create_table_companies.sql</li><li>001_create_table_employees.sql</li><li>db.py</li><li>init_db.py</li><li>flash.html</li><li>company_dropdown.html</li><li>country_state_selector.html</li><li>upload.html</li><li>sort_filter.html</li><li>all test files</li><li>geography.py</li><li>__init__.py (remains empty)</li><li>Dockerfile</li><li>main.py</li><li>index.py</li></ul><div>All other files likely have requirements to fill in.</div></div><div><br></div></td></tr></table>
+<table><tr><td> <em>Deliverable 1: </em> Identity Edits and Setup </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Add screenshot of the index page being displayed (from dev)</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205478397-e0204ebf-8250-440f-b6e6-afd64e582e30.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of the main page with heroku url<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Add screenshot from the DB extension of vs code / IDE</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205478445-e1a9c781-cc81-49e7-986b-eefa0355ffa7.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of company database<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205478468-69c88c90-e7e0-41cb-9c8d-eb9b51b82675.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of employee database<br></p>
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+<table><tr><td> <em>Deliverable 2: </em> Upload / Import CSV File (provided data.csv) </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Add screenshot of /import route</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205478502-a7ed2c7d-9358-4bd4-9bf2-b1911b5ded23.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>code of file checking as csv<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205478524-87c7d93b-7d04-42ac-9511-fc633f27ef85.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>flash messages of query<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205478537-220a6dd6-4835-4ae9-902e-aa324a638e27.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>queries for importing file<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Screenshots of the website when uploading the data.csv file</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504164-eeccea9b-ac75-4414-9868-dfde44496585.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of sucess message and count message<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504231-e31f9693-c656-40bd-b6da-be76dfb114f2.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of when file is not csv<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504263-5aaec09d-0316-4186-bdf7-357e5b112c8f.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of when the selected file is not selected<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 3: </em> Screenshots of DB data (basic summary/view)</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479007-205c1eec-e189-40cd-a961-de4c23a55903.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of company database<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479028-9f22317d-fa94-400e-8fc4-b9f65c4f390d.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of employee database<br></p>
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+<table><tr><td> <em>Deliverable 3: </em> Add Employee </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshot of code for /add route of employee</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479132-f07d5243-329e-4889-8a8a-305911ea1e82.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of code of employee<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479145-c663e418-2cea-43d7-8bb6-6c5eabd9c96f.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of query code<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479161-0338c3b0-bf01-4be5-a6d7-2820ff3c552d.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of code of ln,fn,....<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479175-31509018-167b-46c4-b36b-32ab2143b188.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>query of adding employee<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479185-2ae19e6b-d3f3-41f6-8588-5afe58b5eaf2.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>flash messages<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479202-c4e37626-e204-4f9f-aa3a-53a8217a4011.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>required field<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479223-716aca09-b91d-4afd-a122-e3da470ab1ba.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>required filed<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205479241-0c201c93-841b-4fcc-998b-4cb3580f0dcc.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>query<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Screenshots of website for add employee</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504424-45e8683b-fdaa-48c1-bee4-608878488582.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of filled data<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504387-146ee73a-ef94-4416-8561-413bcc948ef8.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of successfully added employee<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504455-bebfc690-00ae-47a6-8816-a04558a08923.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>first name missing error<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504499-9d906ce4-a825-4ab9-bed0-508d69425ca7.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>last name missing error<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504535-c15d08f3-4253-4157-96ee-ba7bbf5e81ff.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>email is missing error<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 3: </em> Screenshot of new employee DB record from VS Code / IDE</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504569-cae19640-fb58-47fb-8e6f-abaf01154efb.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of single data added through form<br></p>
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+<table><tr><td> <em>Deliverable 4: </em> List/search Employees </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshots of code for /search route of employee</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504658-cce55618-af9f-4173-8b48-15ee3a9c9c6b.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of query for searching employee with requested names<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504717-b85b2327-54d8-4113-9e57-04a8a401d356.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of filter query for all columns<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504786-0c6ee7b6-3a04-4bc4-a230-e789af1fb815.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of retrieving from data and arguments<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504848-78b38ca1-6bf5-43db-a7a5-1f2d8e9145ac.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of flash proper message and inserting data in database<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205504927-aeb342e5-96d2-4d68-a6b3-a4536035633b.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Proper flash messages when entering data<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505038-f554e04e-d8b8-49d8-8618-5e23e7dc54af.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>flash messages<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505072-efce8205-56bd-4980-be00-e7c244ec8f69.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>edit update the query properly<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505119-26210ed0-e5c8-42fe-b386-ed6082b152ab.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>delete queries<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Screenshots of website for search employee</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505285-6ad1cac5-cf07-4049-b418-3d65dae8d5c3.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>first name filter applied<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505324-bc335071-8416-4ca5-8f6a-c6a772f3ada3.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>last name filter applied<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505361-eb4c0f11-1b42-4f2b-8bbf-e9e297ec0730.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>email filter applied<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505401-9e7f216e-5a9e-46d2-96f9-760473b1405b.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>company filter applied<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505463-55b009ed-f5e2-4776-b84d-74edcdac79a8.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>asc filter applied <br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505517-d3b5c428-299d-43bd-9054-7c1361698fca.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>desc filter applied<br></p>
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+<table><tr><td> <em>Deliverable 5: </em> Edit Employee </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshots of code for /edit route of employee</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505583-5ae89301-8da8-4fdb-b9a0-4f8b6149ec75.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>retrieve id, name, mail..... from form<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505632-0d879435-ad2f-4c36-a543-123db7e318d3.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>flash messages<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505681-78ab1655-fb3f-483d-a0ce-46e33fc1e943.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot of query update  proper<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Screenshots of website for edit employee</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505749-be3b815d-f0f5-42ff-be22-6174d3309098.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>data before edit<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505784-9b882612-646d-454e-95f9-bc71d7d77c4c.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>update record message<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505822-da04be7e-e06b-4d42-96fb-07473f674e58.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>data after updating<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 3: </em> Screenshots of DB data before and after of employee data edit from VS Code / IDE</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505898-b35f7b3e-56c5-4104-86ec-216a8248b152.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>database<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505879-a17f84d6-b476-41d6-a67a-b82300f05968.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>updated database<br></p>
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+<table><tr><td> <em>Deliverable 6: </em> Add company </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshot of code for /add route of company</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205505986-725ee899-4f0c-432b-8f65-df65c674d250.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>retrieve data from database properly<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506038-38d7e431-4aae-4fa4-b454-8c86598eb8d5.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>flash messages when adding company<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Screenshots of website for add company</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506199-f4868560-9a62-47c1-8f0c-175874dc8bfb.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>filling on form<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506228-5037ad4a-fe65-4d2c-a362-7aae73ee27ff.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>filling on form<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506246-7dc425e7-d68a-4391-a44e-7f28335a2483.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>success message<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506309-c4033e2c-aff2-41fe-9e52-66c27191ea52.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>error in name of comapny<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506335-741ecf7b-dab2-47ff-84fd-1d56356886e5.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>error in address of company<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506369-06ec63ba-962f-4c1c-8057-0405ae3c66e9.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>error in city of comapny<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506419-854a13f9-7900-4752-a5f9-45a923b3f1f2.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>error in state of company<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506490-6eaa1016-6e89-47e3-961d-ec8b947e789a.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>error in country of company<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 3: </em> Screenshot of new company DB record from VS Code / IDE</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506549-49e1e333-9615-4c6c-bdd6-8f3978c0e908.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>single company in database that was addede previously<br></p>
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+<table><tr><td> <em>Deliverable 7: </em> List/Search Comapny </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshots of code for /search route of company</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506597-9b6f3db6-44a6-418f-9d34-197053a74087.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>in search query retrieve the column names i.e id, name....<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506679-382f0695-a260-468c-84e6-68dd57e318a7.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>search append filter, limit, error message<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Screenshots of website for search company</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506753-083606e4-2ea6-4201-a996-070c8a3f93e8.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>name filter applied<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506804-b99cccf7-8da7-4fec-aed4-a51c36a05e7b.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>country filter applied<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506863-b857e112-9a64-4d9f-af2c-a8ae4a9c2527.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>state filter applied<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506919-12c13ce1-f83c-445e-9673-2fb025283b84.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>desc filter applied<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205506967-b2e274c7-190e-448c-9a8d-26197440c702.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p> asc filter applied<br></p>
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+<table><tr><td> <em>Deliverable 8: </em> Edit Company </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshots of code for /edit route of company</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507012-a0248ed3-fe6d-40c3-859e-65f2c7db6262.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>retrieve data and edit the names<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507075-d38c13c2-0ef9-4c8f-8698-5f99e464636b.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>flash messages<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507097-2b1aa097-7837-4358-b77b-f1574692ca7a.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>edited updated records<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Screenshots of website for edit company</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507150-80d3dcfe-424c-4a79-ae67-9997e021f5d5.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>data before an edit<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507208-9cf76387-ffa3-4134-8a08-21dd3243039b.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>data after edit<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 3: </em> Screenshots of DB data before and after of company  data edit from VS Code / IDE</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507240-c4703cec-6e62-4cbd-974f-fd2849d6da35.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>data that is edited and updated<br></p>
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+<table><tr><td> <em>Deliverable 9: </em> Delete Employee and Delete Company </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshot of code for /delete route of employee</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507417-3d89e26a-6276-4f6b-a917-435c6f000458.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>delete  company and redirect to employee search<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Add a before and after website screenshot of deleting an employee</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507479-6a1dd93f-7661-4ca1-8645-9ca21e4957b5.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>before deleting james butt<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507516-c8fd715a-5fc8-48f2-9fdb-ebd37013ec9b.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>after deleting james butt<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 3: </em> Screenshot of code for /delete route of company</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507284-d8f893b0-525f-4a34-b637-201be3429f14.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>delete  company<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507312-1e2ed6ce-ad01-494a-9b7c-178044363564.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>redirect to company search<br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 4: </em> Add a before and after website screenshot of deleting a company</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507567-69d05877-901a-42d8-991f-8f24ff964a9b.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>before deleting <br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507584-3a8c1ffb-3d14-49fa-a36f-0a0854a5a692.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>after deleting<br></p>
+</td></tr>
+</table></td></tr>
+</table></td></tr>
+<table><tr><td> <em>Deliverable 10: </em> Test Cases and Misc </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
+<tr><td><table><tr><td> <em>Sub-Task 1: </em> Screenshot Test case Results</td></tr>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113481396/205507763-7e6415a0-998a-4f05-914c-4c3a272e2b32.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>test cases <br></p>
+</td></tr>
+</table></td></tr>
+<tr><td> <em>Sub-Task 2: </em> Issues / Learnings / Interesting things to note</td></tr>
+<tr><td> <em>Response:</em> <p>I learned so much about developing a website. Creating specific arguments and&nbsp; specifying<br>the arguments name became tough for me because I was having so many<br>errors there but Came with the answer with the help of professor. Running<br>the test case was the main difficult task which took around 3 days<br>to get solved.&nbsp;<br></p><br></td></tr>
+</table></td></tr>
+<table><tr><td><em>Grading Link: </em><a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-007-F22/is601-mini-project-2-business-management/grade/kks44" target="_blank">Grading</a></td></tr></table>
